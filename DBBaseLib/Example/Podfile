@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'DBBaseLib_Example' do
+
+pod 'DBBaseLib', :path => '../'
+
+  target 'DBBaseLib_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
